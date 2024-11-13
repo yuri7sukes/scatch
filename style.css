@@ -128,7 +128,6 @@ body {
   https://toughengineer.github.io/demo/slider-styler*/
 input[type=range].slider {
     z-index: 1;
-    -webkit-appearance: none;
     background: none;
     position: absolute;
     top: 0;
