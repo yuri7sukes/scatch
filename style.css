@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Sysfont;
+    src: url("Sysfont/sysfont.woff2") format("woff2");
+    font-style: normal;
+}
+
+body {
+    background-color: gray;
+    color: white;
+    font-family: Sysfont, sans-serif;
+
+}
+
+.control-panel {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+
+}
+
+.name {
+    font-size: 46px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 26px;
+    gap: 60px;
+}
+
+.button {
+    background-color: rgb(63, 63, 63);
+    padding: 15px 19px;
+    border-radius: 25px;
+    transition: all 0.20s ease;
+    text-align: center;
+    position: relative;
+    color: rgb(192, 192, 192);
+}
+
+
+.button:hover {
+    cursor: pointer;
+    scale: 110%;
+    box-shadow: inset 0 2em white;
+    color: black;
+}
+
+.button.grid {
+    padding: 0px 0px;
+    position: relative;
+    min-height: 46px;
+    height: 1px;
+    width: 184px;
+}
+
+.button.grid:hover {
+    box-shadow: none;
+}
+
+#slider-grid {
+
+    height: 100%;
+    border-radius: 25px;
+    background-color: rgb(63, 63, 63);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+body {
+    background-color: gray;
+}
+
+.btn {
+    /*   position: relative; */
+    border-radius: 25px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 164px;
+    height: 58px;
+    /*   display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+
+
+.slidecontainer {
+    width: 100%;
+    /* Width of the outside container */
+    position: relative;
+    /*    z-index: 0; */
+    width: 164px;
+    height: 58px;
+}
+
+.hello-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*   transform: translateZ(0); */
+    z-index: 2;
+    padding: 25px;
+    pointer-events: none;
+    user-select: none;
+    mix-blend-mode: difference;
+    /* filter: invert(1) grayscale(1) contrast(9); */
+    color: white;
+    /*   filter: invert(1) grayscale(1) contrast(2); */
+}
+
+.text2 {
+    color: black
+}
+
+/*generated with Input range slider CSS style generator (version 20211225)
+  https://toughengineer.github.io/demo/slider-styler*/
+input[type=range].slider {
+    z-index: 1;
+    -webkit-appearance: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+/*progress support*/
+input[type=range].slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(var(--ratio) * 100%);
+}
+
+input[type=range].slider:focus {
+    outline: none;
+}
+
+/*webkit*/
+input[type=range].slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 0;
+    height: 1em;
+    visibility: hidden;
+}
+
+input[type=range].slider::-webkit-slider-runnable-track {
+    height: 100%;
+    border: 0;
+    border-radius: 25px;
+    background: #616161;
+    box-shadow: none;
+}
+
+input[type=range].slider:hover::-webkit-slider-runnable-track {
+    border-color: #9a9a9a;
+}
+
+input[type=range].slider:active::-webkit-slider-runnable-track {
+    border-color: #c1c1c1;
+}
+
+input[type=range].slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(#FFFFFF, #FFFFFF) 0/var(--sx) 100% no-repeat, #616161;
+}
+
+/*mozilla*/
+input[type=range].slider::-moz-range-thumb {
+    width: 0;
+    height: 1em;
+    visibility: hidden;
+}
+
+input[type=range].slider::-moz-range-track {
+    height: max(calc(1em - 1px - 1px), 0px);
+    border: 1px solid #b2b2b2;
+    border-radius: 0.5em;
+    background: #616161;
+    box-shadow: none;
+}
+
+input[type=range].slider:hover::-moz-range-track {
+    border-color: #9a9a9a;
+}
+
+input[type=range].slider:active::-moz-range-track {
+    border-color: #c1c1c1;
+}
+
+input[type=range].slider.slider-progress::-moz-range-track {
+    background: linear-gradient(#FFFFFF, #FFFFFF) 0/var(--sx) 100% no-repeat, #616161;
+}
+
+/*ms*/
+input[type=range].slider::-ms-fill-upper {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].slider::-ms-fill-lower {
+    background: transparent;
+    border-color: transparent;
+}
+
+input[type=range].slider::-ms-thumb {
+    width: 2em;
+    height: 2em;
+    border-radius: 1em;
+    background: #007cf8;
+    border: none;
+    box-shadow: 0 0 2px black;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+input[type=range].slider::-ms-track {
+    height: 1em;
+    border-radius: 0.5em;
+    background: #616161;
+    border: 1px solid #b2b2b2;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+input[type=range].slider:hover::-ms-track {
+    border-color: #9a9a9a;
+}
+
+input[type=range].slider:active::-ms-track {
+    border-color: #c1c1c1;
+}
+
+input[type=range].slider.slider-progress::-ms-fill-lower {
+    height: max(calc(1em - 1px - 1px), 0px);
+    border-radius: 0.5em 0 0 0.5em;
+    margin: -1px 0 -1px -1px;
+    background: #FFFFFF;
+    border: 1px solid #b2b2b2;
+    border-right-width: 0;
+}
+
+
+.canvas-container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 640px;
+    height: 640px;
+}
+
+.pixel {
+    background-color: white;
+}
